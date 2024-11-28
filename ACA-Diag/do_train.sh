@@ -1,0 +1,11 @@
+python train.py \
+--data_dir /path_to_image_data \
+--train_anno_file /path/train.txt \
+--val_anno_file /path/valid.txt \
+--radiomics_fea_file /path/total_radiomics_norm.csv --use_radio 1 \
+--batch-size 4 --model uniformer_small_IL \
+--lr 1e-4 --warmup-epochs 5 --epochs 100 --num-classes 3 \
+--img_size 16 128 128 \
+--crop_size 14 112 112 \
+--initial-checkpoint ./weights/uniformer_small_k400_8x8_partial.pth \
+--output ./output/aa_diag_model
