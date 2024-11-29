@@ -30,7 +30,7 @@ from medpy import metric
 
 ### set config paras
 data_dir = '/path_to_image_data'
-model_path = './weights/aa_seg_model.pth'
+model_path = './weights/aca_seg_model.pth'
 pred_mask_save_dir = './output'
 
 img_patch_size = (96, 96, 64)
